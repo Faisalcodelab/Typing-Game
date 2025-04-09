@@ -17,16 +17,10 @@ Installation
 To get started, you need to clone the repository and open the project files in your local environment.
 
 Clone the repository:
-
-bash
-Copy
-Edit
 git clone https://github.com/your-username/typing-game.git
+
 Navigate to the project folder:
 
-bash
-Copy
-Edit
 cd typing-game
 Open the index.html file in your browser to start playing the game.
 
