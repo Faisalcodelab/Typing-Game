@@ -2,20 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Typing Speed Test</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Typing Speed Test</h1>
-    <div id="sentence" class="sentence">Loading sentence...</div>
+
+    <!-- Mode Selection Buttons -->
+    <div class="mode-selection">
+      <button id="sentence-mode" class="mode-button active">Sentence Mode</button>
+      <button id="word-mode" class="mode-button">Word Mode</button>
+      <button id="phrase-mode" class="mode-button">Phrase Mode</button>
+    </div>
+
+    <!-- Display Sentence or Word -->
+    <div id="sentence" class="sentence">Loading...</div>
+    
+    <!-- Input Field -->
     <textarea id="input" class="input" placeholder="Start typing..."></textarea>
+
+    <!-- Timer, WPM, Accuracy -->
     <div id="timer" class="timer">Time: 0s</div>
     <div id="wpm" class="wpm">WPM: 0</div>
     <div id="accuracy" class="accuracy">Accuracy: 0%</div>
+
+    <!-- Try Again Message -->
     <div id="try-again-message" class="try-again-message"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
